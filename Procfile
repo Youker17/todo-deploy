@@ -1,1 +1,1 @@
-web: uvicorn todo.asgi:application --port $PORT -v2 
+web: uvicorn todo.asgi:application --port $PORT 

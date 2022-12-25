@@ -96,7 +96,7 @@
 <script>
     const cnvid = JSON.parse(document.getElementById("cnv_id").textContent);
     const cnvsocket = new WebSocket(
-        "wss://"+window.location.host+"/"+"ws/chatting/conversation/"+cnvid
+        "ws://"+window.location.host+"/"+"ws/chatting/conversation/"+cnvid+"/"
     );
     cnvsocket.onmessage = function (e) {
         const data = JSON.parse(e.data)

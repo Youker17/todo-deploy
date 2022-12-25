@@ -1,2 +1,2 @@
-web: uvicorn todo.asgi:application --port $PORT --workers 4
+web: uvicorn todo.asgi:application --port $PORT 
 worker: python manage.py runworker

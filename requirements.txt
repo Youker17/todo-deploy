@@ -5,6 +5,8 @@ asyncer==0.0.2
 
 channels==4.0.0
 
+channels-redis==4.0.0
+
 daphne==4.0.0
 
 Django==4.1.3

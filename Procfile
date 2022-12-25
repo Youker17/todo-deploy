@@ -1,2 +1,2 @@
-web: daphne -b 0.0.0.0 -p $PORT todo.asgi:application
-worker: uvicorn todo.wsgi:application --port $PORT
+web: uvicorn todo.asgi:application --port $PORT --workers 4
+worker: python manage.py runworker

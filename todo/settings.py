@@ -85,7 +85,6 @@ CHANNEL_LAYERS ={
            "hosts": [("todo-app-youker.herokuapp.com", 6379)],
                   },
         "ROUTING": "realtime.routing.channel_routing",
-    },
     }
 }
 

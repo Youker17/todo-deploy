@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 ASGI_APPLICATION = 'todo.asgi.application'
 CHANNEL_LAYERS ={
     "default":{
-        "BACKEND":"channels.layers.InMemoryChannelLayer"
+        "BACKEND":"channels_redis.core.RedisChannelLayer"
     }
 }
 

@@ -80,7 +80,12 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 ASGI_APPLICATION = 'todo.asgi.application'
 CHANNEL_LAYERS ={
     "default":{
-        "BACKEND":"channels_redis.core.RedisChannelLayer"
+        "BACKEND":"channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+           "hosts": [("todo-app-youker.herokuapp.com", 6379)],
+                  },
+        "ROUTING": "realtime.routing.channel_routing",
+    },
     }
 }
 
